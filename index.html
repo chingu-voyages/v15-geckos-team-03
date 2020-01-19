@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy Landing Page Clone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-
 <body>
     <!-- NAVBAR SECTION -->
-    <header class="container">
-
-      <nav class="navBar">
-          <ul id="navLists">
-              <li><a href="#"><img src="https://pmcvariety.files.wordpress.com/2016/10/giphy-logo-e1477932075273.png?w=867" height="55px" width="144px" alt="Logo" class="logo"></a></li>
-              <li><a href="https://giphy.com/reactions">Reactions</a></li>
-              <li><a href="https://giphy.com/entertainment">Entertainment</a></li>
-              <li><a href="https://giphy.com/entertainment">Sports</a></li>
-              <li><a href="https://giphy.com/stickers">Stickers</a></li>
-              <li><a href="https://giphy.com/artists">Artists</a></li>
-              <li><a href="">...</a></li>
-              <li class="close"><span onclick="hide()"></span></li>
-          </ul>
-          <div class="iconBar" onclick="show()">
-           <i></i>
-           <i></i>
-           <i></i>
-          </div>
-          <button>Upload</button>
-          <button>Create</button>
-          <button>LogIn</button>
-      </nav>
-    </header>
-    
-
-
-    <script src="index.js"></script>
+    <div class="container">
+        <div class="logo">
+            <!-- <a href="index.html"><img src="https://logo.clearbit.com/giphy.com/size=200&greyscale=true"></a> -->
+            <a href="#"><img src="https://pmcvariety.files.wordpress.com/2016/10/giphy-logo-e1477932075273.png?w=867"
+                    height="55px" width="144px" alt="Logo" class="logo"></a>
+        </div>
+        <div class="navBar">
+            <div class="iconBar" onclick="show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            <ul id="navLists">
+                <li class="close"><span onclick="hide()">×</span></li>
+                <li><a href="https://giphy.com/reactions">Reactions</a></li>
+                <li><a href="https://giphy.com/entertainment">Entertainment</a></li>
+                <li><a href="https://giphy.com/sports">Sports</a></li>
+                <li><a href="https://giphy.com/stickers">Stickers</a></li>
+                <li><a href="https://giphy.com/artists">Artists</a></li>
+            </ul>
+            <li class="close"><span onclick="hide()"></span></li>
+            </ul>
+            <div class="iconBar" onclick="show()">
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+            </nav>
+        </div>
+        <script src="index.js"></script>
 </body>
-
 </html>

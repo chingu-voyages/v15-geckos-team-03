@@ -24,6 +24,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
+  
 }
 
 .container .logo {
@@ -183,3 +184,4 @@ body {
     left: 0;
   }
 }
+
