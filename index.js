@@ -1,4 +1,5 @@
 var navList = document.getElementById("navLists");
+
 function show() {
     navList
         .classList

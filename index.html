@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- NAVBAR SECTION -->
     <div class="container">
         <div class="logo">
-            <!-- <a href="index.html"><img src="https://logo.clearbit.com/giphy.com/size=200&greyscale=true"></a> -->
             <!-- <a href="#"><img src="https://pmcvariety.files.wordpress.com/2016/10/giphy-logo-e1477932075273.png?w=867"
                     height="55px" width="144px" alt="Logo" class="logo"></a> -->
             <a href="index.html"><img src="images/giphy.jpg" alt="Giphy"><span class="icon">Giphy</span></a>
@@ -43,12 +42,15 @@
         </div>
 
     </div>
-    <div class="search-container">
-        <form action="#">
-            <input type="text" placeholder="Search all the GIFS and Stickers" name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-    </div>
+ <!-- Long Search Bar with Search Icon -->
+    <div class="wrap">
+        <div class="search">
+           <input type="text" class="searchTerm" placeholder="Search all the GIFS and Stickers">
+           <button type="submit" class="searchButton">
+             <i class="fa fa-search"></i>
+          </button>
+        </div>
+     </div>
 
     <script src="index.js"></script>
 </body>
