@@ -10,10 +10,13 @@ h1 {
 	font-weight: 300;
 	letter-spacing: 4px;
 	text-align: center;
-	padding: 1em 0 0.4em 0;
+    padding: 1em 0 0.4em 0;
+   
 }
 
-
+.logo {
+    min-width: 150px;
+}
 
 
 .main{
@@ -31,8 +34,11 @@ h1 {
 
 .bg-layer {
     background: rgba(0, 0, 0, 0.7);
-	min-height: 100vh;
+    min-height: 100vh;
+    margin-top:20px;
+    
 }
+
 
 
 /*--header start here--*/
@@ -136,12 +142,19 @@ a {
     border: none;
 	width: 100%;
 }
+.main-logo {
+    margin: 10 auto;
+}
 
 /* --------------Facebook+Apple Login buttons--------------*/
+
+
 .up-bottom button.btn {
     background: #3b3b3b;
     color: #fff;
     font-size: 15px;
+    text-align: center;
+   
   
     padding: .8em 2em;
     letter-spacing: 1px;
