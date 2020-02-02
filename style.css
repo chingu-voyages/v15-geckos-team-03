@@ -1,54 +1,123 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
 body {
-  font-family: 'Open Sans', sans-serif;
-  margin: 0;
+  background: black;
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.mega-dropdown {
+  position: static !important;
+
+}
+
+.mega-dropdown-menu {
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+
+.mega-dropdown-menu>li>ul {
   padding: 0;
-  background-color: black;
+  margin: 0;
+
 }
 
-.container {
-  height: 60px;
-  background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
-  margin-left: 138px;
+.mega-dropdown-menu>li>ul>li {
+  list-style: none;
+
 }
 
-.container .logo {
-  max-width: 250px;
-  padding: 0 10px;
-  overflow: hidden;
+.mega-dropdown-menu>li>ul>li>a {
+  display: block;
+  color: #222;
+  color: white;
+  padding: 8px 5px;
 }
 
-.container .logo a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 60px;
+.mega-dropdown-menu>li ul>li>a:hover,
+.mega-dropdown-menu>li ul>li>a:focus {
+  text-decoration: none;
 }
 
-.container .logo a img {
-  max-width: 100%;
-  max-height: 60px;
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #ff3546;
+  color: white;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+  font-weight: bold;
 }
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+}
+
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.mega-dropdown-menu {
+  background: rgb(229, 106, 179);
+  background: #ec38a4;
+}
+
+
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+
+}
+
+.glyphicon-option-vertical {
+  font-size: 22px;
+}
+
+/* .navbar-inverse .navbar-nav>li>a:hover{
+   background: #c0392b;  
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  
+  background: linear-gradient(to right, #8e44ad, #c0392b);  
+} */
+
+.navMenu>a:hover {
+  background: #c0392b;
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+}
+
+
+.navbar-inverse {
+  background: none;
+}
+
+.navbar-inverse button {
+  background: #7067ff;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 95px;
+  margin: 6px -11px;
+}
+
+
 
 .icon {
   font-size: 40px;
@@ -56,228 +125,63 @@ body {
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
+
 }
 
-.container .navBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding: 0 10px;
-}
-
-.container .navBar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.bottomHeader {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(185, 24, 113);
+  padding: 20px 220px 20px 20px;
+  margin-bottom: -21px;
 }
 
-.container .navBar ul li a {
-  text-decoration: none;
-  color: #999999;
-  font-size: 18px;
-  display: block;
-  height: 60px;
-  line-height: 60px;
-  cursor: pointer;
-  padding: 0 10px;
+.bottomHeader li a {
+  color: #fff;
 }
 
-.container .navBar ul li a:hover {
-  color: #ffffff;
-  background: #283c86;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #45a247, #283c86);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #45a247, #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* Long search Bar */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 580px;
 }
 
-.container .navBar ul .close {
-  display: none;
-  text-align: right;
-  padding: 10px;
+.searchTerm {
+  width: 100%;
+  border: none;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  padding: 25px;
+  font-size: 20px;
 }
 
-.container .navBar ul .close span {
-  font-size: 40px;
-  display: inline-block;
-  border: 1px solid #cccccc;
-  padding: 0 10px;
-  cursor: pointer;
+.searchTerm:focus {
+  color: #000;
 }
 
-.container .navBar .iconBar {
-  padding: 18px 8px;
+/* Search Button */
+.searchButton {
   width: 50px;
-  height: 60px;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  height: 50px;
+  background: #c0392b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
+  font-size: 20px;
 }
 
-.container .navBar .iconBar i {
-  background-color: #ffffff;
-  height: 2px;
-}
-
-@media only screen and (max-width: 650px) {
-  .container {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-  }
-
-  .container .logo {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-  }
-
-  .container .navBar {
-    -webkit-box-flex: 0;
-    -ms-flex: 0;
-    flex: 0;
-  }
-
-  .container .navBar ul {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    position: fixed;
-    left: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    background: #ffffff;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    -webkit-transition: left .3s;
-    -o-transition: left .3s;
-    transition: left .3s;
-  }
-
-  .container .navBar ul li a {
-    padding: 10px;
-    font-size: 16px;
-    height: auto;
-    line-height: normal;
-    color: #555555;
-  }
-
-  .container .navBar ul .close {
-    display: block;
-  }
-
-  .container .navBar .icon-bar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
-  .container .navBar ._Menus-show {
-    left: 0;
-  }
-}
-
-#navLists li a {
-  color: #fff;
-}
-/* Three dots in the navigation Menu */
-.threeDots:after {
-  content: '\2807';
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-}
-
-/* Create and Update Buttons */
-.btn {
+.navbar-right>li>a>.btn {
+  background-color: rgb(88, 86, 86);
+  padding: 5px;
   width: 75px;
-  height: 35px;
-  border: none;
-  padding: 10px 20px 10px 20px;
-  margin-top: 20px;
-  margin-right: 5px;
-  text-align: center;
-  color: #fff;
-  font-size: 15px;
-  background-color: rgb(72, 72, 241);
-  cursor: pointer;
+  margin: 5px -10px;
 }
-
-/* Login Button */
-#login {
-  width: 175px;
-  height: 35px;
-  margin-top: 20px;
-  background-color: rgb(80, 76, 76);
-  color: #fff;
-  font-size: 15px;
-  font-weight: bold;
-  margin-left: 20px;
-  border: none;
-  cursor: pointer;
-}
-
-/* Long Search Bar with Search Icon  */
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-  
-  .search {
-    width: 100%;
-    position: relative;
-    display: flex;
-    margin-bottom: 580px;
-  }
-  
-  .searchTerm {
-    width: 100%;
-    border-right: none;
-    padding: 25px;
-    height: 20px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    font-size: 20px;
-  }
-  
-  .searchTerm:focus{
-    color: #000;
-  }
-  
-  .searchButton {
-    width: 50px;
-    height: 54px;
-    background: #8A2387;
-    background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  
-    background: linear-gradient(to right, #F27121, #E94057, #8A2387); 
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  /*Resize the wrap to see the search bar change!*/
-  .wrap{
-    width: 75%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-
 

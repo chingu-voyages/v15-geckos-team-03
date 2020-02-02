@@ -1,13 +1,12 @@
-var navList = document.getElementById("navLists");
-
-function show() {
-    navList
-        .classList
-        .add("_Menus-show");
-}
-
-function hide() {
-    navList
-        .classList
-        .remove("_Menus-show");
-}
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
