@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+.search_btn {
+    background: linear-gradient(45deg, #6157ff, #e0409b);
+    outline: none;
+}
+
+.search {
+    margin-top: 60px;
+    padding: 20%;
+}
+
+
+
+
+.show {
+    margin-top: 20px;
+    
+} 
