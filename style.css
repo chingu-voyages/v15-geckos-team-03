@@ -1,5 +1,6 @@
 body {
   background: black;
+  /* overflow: hidden; */
 }
 
 * {
@@ -117,8 +118,6 @@ body {
   margin: 6px -11px;
 }
 
-
-
 .icon {
   font-size: 40px;
   font-weight: bolder;
@@ -184,3 +183,24 @@ body {
   width: 75px;
   margin: 5px -10px;
 }
+
+/* Developer Avatar's */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  float: left;
+}
+
+.avatarLeft {
+  padding: 5px;
+  float: left;
+  margin-left: 40px;
+}
+
+.avatarRight {
+  padding: 5px;
+  float: right;
+  margin-right: 40px;
+}
+
