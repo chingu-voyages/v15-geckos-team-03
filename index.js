@@ -2,7 +2,8 @@ const giphy_api_key = "xOsO9SpwmmPd30XSkhzM7x9nB5GLIXva";
 
 //Connect API key and Search Endpoint url
 const getGifs = () => {
-  const gif = document.getElementById("gifs").value;
+  const gif = document.getElementById("gifs").value || "cats";
+
   const search_endpoint = `https://api.giphy.com/v1/gifs/search?q=${gif}&api_key=${giphy_api_key}`;
 
   //Fetching Data from API
@@ -24,5 +25,6 @@ const getGifs = () => {
     })
     .catch(err => console.log(err));
 };
-//Eding
+//Ending
+window.addEventListener("load", getGifs);
 document.getElementById("search_gif").addEventListener("click", getGifs);
