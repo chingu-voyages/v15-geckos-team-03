@@ -1,3 +1,205 @@
 body {
-    background-color: black;
+  background: black;
+  /* overflow: hidden; */
+}
+
+* {
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+.mega-dropdown {
+  position: static !important;
+
+}
+
+.mega-dropdown-menu {
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+
+}
+
+.mega-dropdown-menu>li>ul {
+  padding: 0;
+  margin: 0;
+
+}
+
+.mega-dropdown-menu>li>ul>li {
+  list-style: none;
+
+}
+
+.mega-dropdown-menu>li>ul>li>a {
+  display: block;
+  color: #222;
+  color: white;
+  padding: 8px 5px;
+}
+
+.mega-dropdown-menu>li ul>li>a:hover,
+.mega-dropdown-menu>li ul>li>a:focus {
+  text-decoration: none;
+}
+
+.mega-dropdown-menu .dropdown-header {
+  font-size: 18px;
+  color: #ff3546;
+  color: white;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.carousel-control {
+  width: 30px;
+  height: 30px;
+  top: -35px;
+}
+
+.left.carousel-control {
+  right: 30px;
+  left: inherit;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  font-size: 12px;
+  background-color: #fff;
+  line-height: 30px;
+  text-shadow: none;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.mega-dropdown-menu {
+  background: rgb(229, 106, 179);
+  background: #ec38a4;
+}
+
+
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+
+}
+
+.glyphicon-option-vertical {
+  font-size: 22px;
+}
+
+/* .navbar-inverse .navbar-nav>li>a:hover{
+   background: #c0392b;  
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  
+  background: linear-gradient(to right, #8e44ad, #c0392b);  
+} */
+
+.navMenu>a:hover {
+  background: #c0392b;
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+}
+
+
+.navbar-inverse {
+  background: none;
+}
+
+.navbar-inverse button {
+  background: #7067ff;
+  border: none;
+  color: white;
+  padding: 5px;
+  width: 95px;
+  margin: 6px -11px;
+}
+
+.icon {
+  font-size: 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+.bottomHeader {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(185, 24, 113);
+  padding: 20px 220px 20px 20px;
+  margin-bottom: -21px;
+}
+
+.bottomHeader li a {
+  color: #fff;
+}
+
+/* Long search Bar */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-bottom: 580px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: none;
+  height: 35px;
+  border-radius: 5px 0 0 5px;
+  padding: 25px;
+  font-size: 20px;
+}
+
+.searchTerm:focus {
+  color: #000;
+}
+
+/* Search Button */
+.searchButton {
+  width: 50px;
+  height: 50px;
+  background: #c0392b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #8e44ad, #c0392b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navbar-right>li>a>.btn {
+  background-color: rgb(88, 86, 86);
+  padding: 5px;
+  width: 75px;
+  margin: 5px -10px;
+}
+
+/* Developer Avatar's */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  float: left;
+}
+
+.avatarLeft {
+  padding: 5px;
+  float: left;
+  margin-left: 40px;
+}
+
+.avatarRight {
+  padding: 5px;
+  float: right;
+  margin-right: 40px;
 }
