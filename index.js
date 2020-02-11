@@ -13,14 +13,11 @@ const getGifs = () => {
       const gif_array = api_output.data.map(gif => gif.images.fixed_width.url);
       console.log(gif_array);
 
-      const gifs = gif_array
-        .map(
-          gif =>
+      const gifs = gif_array.map( gif =>
             `<div class="flex-fill">
-			<img src=${gif}>
-			</div>`
-        )
-        .join();
+			 <img src=${gif}>
+			 </div>`
+        ).join();
       document.getElementById("display_gif").innerHTML = gifs;
     })
     .catch(err => console.log(err));
