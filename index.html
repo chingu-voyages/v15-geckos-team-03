@@ -6,22 +6,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    /> -->
     <link href="style.css" rel="stylesheet" />
+   
 </head>
 
 <body>
     <!-- Developer's Info -->
     <div id="avatarContent">
-        
-       <a href="https://github.com/sasigit7" target="_blank"><img src="images/shashi.jpg" alt="Shashi pic" class="avatar avatarLeft"></a>
-   
-       <a href="https://github.com/detoner777" target="_blank"><img src="images/Alex.jpeg" alt="Alex pic" class="avatar avatarRight"></a> 
+
+        <a href="https://github.com/sasigit7" target="_blank"><img src="images/shashi.jpg" alt="Shashi pic"
+                class="avatar avatarLeft"></a>
+
+        <a href="https://github.com/detoner777" target="_blank"><img src="images/Alex.jpeg" alt="Alex pic"
+                class="avatar avatarRight"></a>
     </div>
-  
+
     <!-- Main Content -->
     <div class="container" style="width:1000px;">
-        
+
         <nav class="navbar navbar-inverse">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
@@ -139,16 +149,52 @@
         </nav>
 
         <!-- Search Button -->
-        <div class="search">
+        <!-- <div class="search">
             <input type="text" class="searchTerm" placeholder=" Search all the GIFs and Stickers" />
             <button type="submit" class="searchButton">
                 <i class="fa fa-search"></i>
             </button>
-        </div>
+        </div> -->
 
-    </div>
     
+
+    <div class="search">
+        <!-- Search Box -->
+        <div class="d-flex justify-content-between">
+          <input
+            type="text"
+            class="w-100 searchTerm"
+            id="gifs"
+            placeholder="Search all the GIFs and Stickers"
+          />
+          <button class="searchButton" id="search_gif">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <!-- Display gifs -->
+        <div
+          class="d-flex flex-wrap justify-content-center show"
+          id="display_gif"
+        ></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
-<script src="index.js"></script>

@@ -140,12 +140,17 @@ body {
   color: #fff;
 }
 
+.navbar-right>li>a>.btn {
+  background-color: rgb(88, 86, 86);
+  padding: 5px;
+  width: 75px;
+  margin: 5px -10px;
+}
+
 /* Long search Bar */
 .search {
-  width: 100%;
+  width: 90%;
   position: relative;
-  display: flex;
-  margin-bottom: 580px;
 }
 
 .searchTerm {
@@ -161,10 +166,17 @@ body {
   color: #000;
 }
 
+#display_gif {
+  display: block;
+  margin: 10px auto 20px;
+}
+
 /* Search Button */
+
 .searchButton {
   width: 50px;
   height: 50px;
+  outline: none;
   background: #c0392b;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);
@@ -177,14 +189,29 @@ body {
   font-size: 20px;
 }
 
-.navbar-right>li>a>.btn {
-  background-color: rgb(88, 86, 86);
-  padding: 5px;
-  width: 75px;
-  margin: 5px -10px;
+.show {
+  margin-top: 120px;
+
 }
 
-/* Developer Avatar's */
+/* Search Alex */
+
+/* .search_btn {
+  background: linear-gradient(45deg, #6157ff, #e0409b);
+  outline: none;
+}
+
+.search {
+  margin-top: 60px;
+  padding: 20%;
+}
+
+.show {
+  margin-top: 20px;
+  
+} */
+
+/* Developer's Avatar's */
 .avatar {
   width: 120px;
   height: 120px;
