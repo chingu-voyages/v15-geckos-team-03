@@ -7,7 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    
+
     <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,7 +15,16 @@
       crossorigin="anonymous"
     /> -->
     <link href="style.css" rel="stylesheet" />
-   
+    <style>
+        search .d-flex {
+            display: flex;
+        }
+
+        div#display_gif {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,14 +34,15 @@
         <a href="https://github.com/sasigit7" target="_blank"><img src="images/shashi.jpg" alt="Shashi pic"
                 class="avatar avatarLeft"></a>
 
+
         <a href="https://github.com/detoner777" target="_blank"><img src="images/Alex.jpeg" alt="Alex pic"
                 class="avatar avatarRight"></a>
     </div>
 
     <!-- Main Content -->
-    <div class="container" style="width:1000px;">
+    <div class="container">
 
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse" style="border:none;">
             <div class="navbar-header">
                 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,8 +52,9 @@
                 </button>
 
                 <div class="logo">
-                    <a href="index.html"><img src="images/giphy.jpg" alt="Giphy"
-                            style="max-width: 100%;max-height: 60px;"><span class="icon">Giphy</span></a>
+                    <a href="index.html">
+                        <img src="images/giphy.jpg" alt="Giphy" style="max-width:100%;max-height:60px;">
+                        <span class="icon">Giphy</span></a>
                 </div>
             </div>
 
@@ -101,7 +112,7 @@
                                 </ul>
                             </li>
                             <li class="col-sm-4">
-                                <ul style="float: left;">
+                                <ul style="float:left;">
                                     <li class="dropdown-header"><strong>About</strong></li>
                                     <li class="divider"></li>
                                     <li><a href="#">Team</a></li>
@@ -111,7 +122,7 @@
                                     <li><a href="#">Marketers</a></li>
                                     <li><a href="#">Developers</a></li>
                                 </ul>
-                                <ul style="float: auto; margin-top: 30px;">
+                                <ul style="float:auto; margin-top:30px;">
                                     <li class="dropdown-header"><strong></strong></li>
                                     <li class="divider"></li>
                                     <li><a href="#">Labs</a></li>
@@ -137,13 +148,13 @@
                     <li><a href="#"><button type="button">Create</button></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="login.html">
-                            <button type="button" class="btn">
-                                <span class="glyphicon glyphicon-user"></span> LogIn
-                            </button>
-                        </a>
-                    </li>
+                    <!-- <li> -->
+                    <!-- <a href="login.html"> -->
+                    <!-- <button type="button" class="btn"> -->
+                    <!-- <span class="glyphicon glyphicon-user"></span> LogIn -->
+                    <!-- </button> -->
+                    <!-- </a> -->
+                    <!-- </li> -->
                 </ul>
             </div><!-- /.nav-collapse -->
         </nav>
@@ -156,44 +167,28 @@
             </button>
         </div> -->
 
-    
 
-    <div class="search">
-        <!-- Search Box -->
-        <div class="d-flex justify-content-between">
-          <input
-            type="text"
-            class="w-100 searchTerm"
-            id="gifs"
-            placeholder="Search all the GIFs and Stickers"
-          />
-          <button class="searchButton" id="search_gif">
-            <i class="fa fa-search"></i>
-          </button>
+
+        <div class="search">
+            <!-- Search Box -->
+            <div class="d-flex justify-content-between">
+                <input type="text" class="w-100 searchTerm" id="gifs" placeholder="Search all the GIFs and Stickers" />
+                <button class="searchButton" id="search_gif">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <!-- Display gifs -->
+            <div class="d-flex flex-wrap justify-content-center show" id="display_gif"></div>
         </div>
-        <!-- Display gifs -->
-        <div
-          class="d-flex flex-wrap justify-content-center show"
-          id="display_gif"
-        ></div>
-      </div>
     </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="index.js"></script>
 </body>
 

@@ -154,7 +154,8 @@ body {
 }
 
 .searchTerm {
-  width: 100%;
+  /* width: 100%; */
+  width: 94%;
   border: none;
   height: 35px;
   border-radius: 5px 0 0 5px;
@@ -187,6 +188,8 @@ body {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+  border: none;
+  margin-left: -4px;
 }
 
 .show {
