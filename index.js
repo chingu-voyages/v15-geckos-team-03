@@ -1,16 +1,21 @@
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-            $(this).toggleClass('open');       
-        }
-    );
+$(document).ready(function() {
+  $(".dropdown").hover(
+    function() {
+      $(".dropdown-menu", this)
+        .not(".in .dropdown-menu")
+        .stop(true, true)
+        .slideDown("400");
+      $(this).toggleClass("open");
+    },
+    function() {
+      $(".dropdown-menu", this)
+        .not(".in .dropdown-menu")
+        .stop(true, true)
+        .slideUp("400");
+      $(this).toggleClass("open");
+    }
+  );
 });
-
 
 // Giphy API Start
 
@@ -29,11 +34,14 @@ const getGifs = () => {
       const gif_array = api_output.data.map(gif => gif.images.fixed_width.url);
       console.log(gif_array);
 
-      const gifs = gif_array.map( gif =>
+      const gifs = gif_array
+        .map(
+          gif =>
             `<div class="flex-fill">
 			 <img src=${gif}>
 			 </div>`
-        ).join();
+        )
+        .join();
       document.getElementById("display_gif").innerHTML = gifs;
     })
     .catch(err => console.log(err));
@@ -42,3 +50,13 @@ const getGifs = () => {
 window.addEventListener("load", getGifs);
 document.getElementById("search_gif").addEventListener("click", getGifs);
 // Giphy API End
+
+$(document).ready(function() {
+  $("input").keydown(function(e) {
+    if (e.keyCode === 13) {
+      getGifs();
+    }
+  });
+});
+
+
