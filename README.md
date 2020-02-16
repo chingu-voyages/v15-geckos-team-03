@@ -10,7 +10,7 @@ This Giphy landing page clone was developed by Shashi & Alex from **Geckos Team 
 
 GIPHY is your top source for the best & newest GIFs & Animated Stickers online. Find everything from funny GIFs, reaction GIFs, unique GIFs and more. 
 * You can view the real Giphy landing page at https://www.giphy.com
-* You can view Giphy Clone at 
+* You can view Giphy Clone at https://chingu-voyages.github.io/v15-geckos-team-03/index.html
 * You can view Giphy Clone in Giphy Mode: 
 
 
