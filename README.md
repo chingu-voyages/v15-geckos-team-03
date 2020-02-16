@@ -29,7 +29,7 @@ GIPHY is your top source for the best & newest GIFs & Animated Stickers online. 
 * "Login" button lead to new page with login information
 * Type anything in the search bar, Giphy API will bring the respective giphy's below
 * Search icon supports both mouse click and "Enter" button from the keyboard
-* Footer links will provide Project's relavant information. 
+* Footer links will provide Project's relevant information. 
 
 
 ## Contributers
