@@ -266,11 +266,43 @@ body {
   }
 }
 @media (max-width: 938px) {
+  .avatarContent {
+    display: none;
+  }
+  
+}
+@media (max-width: 1280px) {
   .searchTerm {
     width: 80%;
   }
+}
 
-  .avatarContent {
-    display: none;
+@media screen and (max-width: 1024px)  and (min-width: 767px) {
+   .navbar-inverse {
+  width: 610px;
+ }
+}
+
+@media (max-width: 667px) {
+
+.navbar-inverse button {
+  background: #7067ff;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 90px;
+  margin: 6px 25px;
+ } 
+}
+
+@media screen and (max-width: 1920px)  and (min-width: 1653px) {
+  .searchTerm {
+    width: 96%;
+  }
+}
+
+@media (max-width: 320px) {
+  .searchTerm {
+    width: 79%;
   }
 }
