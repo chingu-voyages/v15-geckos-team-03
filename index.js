@@ -1,13 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $(".dropdown").hover(
-    function() {
+    function () {
       $(".dropdown-menu", this)
         .not(".in .dropdown-menu")
         .stop(true, true)
         .slideDown("400");
       $(this).toggleClass("open");
     },
-    function() {
+    function () {
       $(".dropdown-menu", this)
         .not(".in .dropdown-menu")
         .stop(true, true)
@@ -18,7 +18,6 @@ $(document).ready(function() {
 });
 
 // Giphy API Start
-
 const giphy_api_key = "xOsO9SpwmmPd30XSkhzM7x9nB5GLIXva";
 
 //Connect API key and Search Endpoint url
@@ -37,7 +36,7 @@ const getGifs = () => {
       const gifs = gif_array
         .map(
           gif =>
-            `<div class="flex-fill">
+          `<div class="flex-fill">
 			 <img src=${gif}>
 			 </div>`
         )
@@ -49,14 +48,12 @@ const getGifs = () => {
 //Ending
 window.addEventListener("load", getGifs);
 document.getElementById("search_gif").addEventListener("click", getGifs);
-// Giphy API End
 
-$(document).ready(function() {
-  $("input").keydown(function(e) {
+// Giphy API End
+$(document).ready(function () {
+  $("input").keydown(function (e) {
     if (e.keyCode === 13) {
       getGifs();
     }
   });
 });
-
-

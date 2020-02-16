@@ -1,266 +1,219 @@
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
     <link href="style.css" rel="stylesheet" />
     <style>
-      search .d-flex {
-        display: flex;
-      }
+        search .d-flex {
+            display: flex;
+        }
 
-      div#display_gif {
-        display: flex !important;
-        flex-wrap: wrap;
-      }
+        div#display_gif {
+            display: flex !important;
+            flex-wrap: wrap;
+        }
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Developer's Info -->
     <div class="avatarContent">
-      <a href="https://github.com/sasigit7" target="_blank"
-        ><img src="images/shashi.jpg" alt="Shashi pic" class="avatar avatarLeft"
-      /></a>
-
-      <a href="https://github.com/detoner777" target="_blank"
-        ><img src="images/Alex.jpeg" alt="Alex pic" class="avatar avatarRight"
-      /></a>
+        <a href="https://github.com/sasigit7" target="_blank">
+            <img src="images/shashi.jpg" alt="Shashi pic" class="avatar avatarLeft" />
+        </a>
+        <a href="https://github.com/detoner777" target="_blank">
+            <img src="images/Alex.jpeg" alt="Alex pic" class="avatar avatarRight" />
+        </a>
     </div>
-
     <!-- Main Content -->
     <div class="container" style="width:1077px;">
-      <nav class="navbar navbar-inverse" style="border:none;">
-        <div class="navbar-header">
-          <button
-            class="navbar-toggle"
-            type="button"
-            data-toggle="collapse"
-            data-target=".js-navbar-collapse"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <div class="logo">
-            <a href="index.html">
-              <img
-                src="images/giphy.jpg"
-                alt="Giphy"
-                style="max-width:100%;max-height:60px;"
-              />
-              <span class="icon">Giphy</span></a
-            >
-          </div>
-        </div>
-
-        <div class="collapse navbar-collapse js-navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="navMenu"><a href="#">Reactions</a></li>
-            <li class="navMenu"><a href="#">Entertainment</a></li>
-            <li class="navMenu"><a href="#">Sports</a></li>
-            <li class="navMenu"><a href="#">Stickers</a></li>
-            <li class="navMenu"><a href="#">Artists</a></li>
-            <li class="dropdown mega-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                ><span class="glyphicon glyphicon-option-vertical"></span
-              ></a>
-              <ul class="dropdown-menu mega-dropdown-menu">
-                <li class="col-sm-4">
-                  <ul style="float: left;">
-                    <li class="dropdown-header"><strong>Categories</strong></li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#"><strong>GIPHY</strong> Studios</a>
-                    </li>
-                    <li><a href="#">Animals</a></li>
-                    <li><a href="#">Actions</a></li>
-                    <li><a href="#">Anime</a></li>
-                    <li><a href="#">Cartoons</a></li>
-                    <li><a href="#">Emotions</a></li>
-                  </ul>
-
-                  <ul style="float: auto; margin-top: 30px;">
-                    <li class="dropdown-header"><strong></strong></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Food/Drink</a></li>
-                    <li><a href="#">Gaming</a></li>
-                    <li><a href="#">Holidays/Greetings</a></li>
-                    <li><a href="#">Memes</a></li>
-                    <li><a href="#">Videos</a></li>
-                  </ul>
-                </li>
-                <li class="col-sm-2">
-                  <ul>
-                    <li class="dropdown-header"><strong>Stickers</strong></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Originals</a></li>
-                    <li><a href="#">Trending</a></li>
-                    <li><a href="#">Reactions</a></li>
-                    <li><a href="#">Packs</a></li>
-                  </ul>
-                </li>
-                <li class="col-sm-2">
-                  <ul>
-                    <li class="dropdown-header"><strong>Apps</strong></li>
-                    <li class="divider"></li>
-                    <li>
-                      <a href="#"><strong>GIPHY</strong></a>
-                    </li>
-                    <li>
-                      <a href="#"><strong>GIPHY World</strong></a>
-                    </li>
-                    <li>
-                      <a href="#"><strong>GIPHY Cam</strong></a>
-                    </li>
-                    <li>
-                      <a href="#"><strong>Giphy Capture</strong></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="col-sm-4">
-                  <ul style="float:left;">
-                    <li class="dropdown-header"><strong>About</strong></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Engineering Blog</a></li>
-                    <li><a href="#">GIPHY Arts</a></li>
-                    <li><a href="#">Studios</a></li>
-                    <li><a href="#">Marketers</a></li>
-                    <li><a href="#">Developers</a></li>
-                  </ul>
-                  <ul style="float:auto; margin-top:30px;">
-                    <li class="dropdown-header"><strong></strong></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Labs</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">DMCA</a></li>
-                    <li><a href="#">Guidelines</a></li>
-                  </ul>
-                </li>
-                <ul class="bottomHeader">
-                  <li><a href="#">&copy; 2020 GIPHY.Inc</a></li>
-                  <li><a href="#">|</a></li>
-                  <li><a href="#">Terms of service</a></li>
-                  <li><a href="#">Community Guidelines</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Copyright</a></li>
-                </ul>
-              </ul>
-            </li>
-            <li class="rigt-nav">
-              <a href="#"><button type="button">Upload</button></a>
-            </li>
-            <li class="rigt-nav">
-              <a href="#"><button type="button">Create</button></a>
-            </li>
-            <li class="rigt-nav">
-              <a href="login.html">
-                <button
-                  type="button"
-                  class="btn"
-                  style="background-color: rgb(88, 86, 86);"
-                >
-                  <span class="glyphicon glyphicon-user"></span> LogIn
+        <nav class="navbar navbar-inverse" style="border:none;">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-    
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/giphy.jpg" alt="Giphy" style="max-width:100%;max-height:60px;" />
+                        <span class="icon">Giphy</span></a>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse js-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="navMenu"><a href="#">Reactions</a></li>
+                    <li class="navMenu"><a href="#">Entertainment</a></li>
+                    <li class="navMenu"><a href="#">Sports</a></li>
+                    <li class="navMenu"><a href="#">Stickers</a></li>
+                    <li class="navMenu"><a href="#">Artists</a></li>
+                    <li class="dropdown mega-dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class="glyphicon glyphicon-option-vertical"></span></a>
+                        <ul class="dropdown-menu mega-dropdown-menu">
+                            <li class="col-sm-4">
+                                <ul style="float: left;">
+                                    <li class="dropdown-header"><strong>Categories</strong></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#"><strong>GIPHY</strong> Studios</a>
+                                    </li>
+                                    <li><a href="#">Animals</a></li>
+                                    <li><a href="#">Actions</a></li>
+                                    <li><a href="#">Anime</a></li>
+                                    <li><a href="#">Cartoons</a></li>
+                                    <li><a href="#">Emotions</a></li>
+                                </ul>
+                                <ul style="float: auto; margin-top: 30px;">
+                                    <li class="dropdown-header"><strong></strong></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Food/Drink</a></li>
+                                    <li><a href="#">Gaming</a></li>
+                                    <li><a href="#">Holidays/Greetings</a></li>
+                                    <li><a href="#">Memes</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header"><strong>Stickers</strong></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Originals</a></li>
+                                    <li><a href="#">Trending</a></li>
+                                    <li><a href="#">Reactions</a></li>
+                                    <li><a href="#">Packs</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-2">
+                                <ul>
+                                    <li class="dropdown-header"><strong>Apps</strong></li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#"><strong>GIPHY</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><strong>GIPHY World</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><strong>GIPHY Cam</strong></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><strong>Giphy Capture</strong></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-4">
+                                <ul style="float:left;">
+                                    <li class="dropdown-header"><strong>About</strong></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Engineering Blog</a></li>
+                                    <li><a href="#">GIPHY Arts</a></li>
+                                    <li><a href="#">Studios</a></li>
+                                    <li><a href="#">Marketers</a></li>
+                                    <li><a href="#">Developers</a></li>
+                                </ul>
+                                <ul style="float:auto; margin-top:30px;">
+                                    <li class="dropdown-header"><strong></strong></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Labs</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                    <li><a href="#">DMCA</a></li>
+                                    <li><a href="#">Guidelines</a></li>
+                                </ul>
+                            </li>
+                            <ul class="bottomHeader">
+                                <li><a href="#">&copy; 2020 GIPHY.Inc</a></li>
+                                <li><a href="#">|</a></li>
+                                <li><a href="#">Terms of service</a></li>
+                                <li><a href="#">Community Guidelines</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Copyright</a></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="right-nav">
+                        <a href="#"><button type="button">Upload</button></a>
+                    </li>
+                    <li class="right-nav">
+                        <a href="#"><button type="button">Create</button></a>
+                    </li>
+                    <li class="right-nav">
+                        <a href="login.html">
+                            <button type="button" class="btn" style="background-color: rgb(88, 86, 86);">
+                                <span class="glyphicon glyphicon-user"></span> LogIn
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
     <div class="search">
         <!-- Search Box -->
         <div class="justify-content-between">
-          <input
-            type="text"
-            class="searchTerm"
-            id="gifs"
-            placeholder="Search all the GIFs and Stickers"
-          />
-          <button class="searchButton" id="search_gif">
-            <i class="fa fa-search"></i>
-          </button>
+            <input type="text" class="searchTerm" id="gifs" placeholder="Search all the GIFs and Stickers" />
+            <button class="searchButton" id="search_gif">
+                <i class="fa fa-search"></i>
+            </button>
         </div>
-
         <!-- Display gifs -->
-        <div
-          class="display-gifs"
-          id="display_gif"
-        ></div>
-      </div>
+        <div class="display-gifs" id="display_gif"></div>
+    </div>
     <!-- -----------footer------------ -->
     <footer>
-      <div class="copyright-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-              <div class="copyright-text">
-                <p>
-                  Copyright &copy; 2020, All Right Reserved
-                  <a href="shttps://www.chingu.io/"> Chingu </a> ||
-                  <a
-                    href="https://github.com/chingu-voyages/v15-geckos-team-03/tree/master/"
-                  >
-                    Geckos-Team 3
-                  </a>
-                </p>
-              </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>
+                                Copyright &copy; 2020 - All rights reserved
+                            </p>
+                            <p>
+                                Cloned <a href="https:www.giphy.com" target="_blank">Giphy</a> & Recoded by
+                                <a href="https://github.com/detoner777/" target="_blank">Alex</a> &
+                                <a href="https://github.com/sasigit7" target="_blank">Shashi</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <div class="copyright-text">
+                                    <p>Proud developers from</p>
+                                    <a href="https://www.chingu.io/" target="_blank">Chingu </a> ||
+                                    <a href="https://github.com/chingu-voyages/v15-geckos-team-03/tree/master/"
+                                        target="_blank">Voyage-15</a> ||
+                                    <a href="https://github.com/chingu-voyages/v15-geckos-team-03/tree/master/"
+                                        target="_blank">
+                                        Geckos-Team 3
+                                    </a>
+                                </div>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="login.html">Login page</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-              <div class="footer-menu">
-                <ul>
-                  <div class="copyright-text">
-                    <p>
-                      Developed with Love by
-                      <a href="https://github.com/detoner777/"> @Alex</a> &
-                      <a href="https://github.com/sasigit7">@Shashi</a>
-                    </p>
-                  </div>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="login.html">Login page</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
