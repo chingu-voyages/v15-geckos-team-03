@@ -14,6 +14,9 @@ GIPHY is your top source for the best & newest GIFs & Animated Stickers online. 
 * You can view Giphy Clone in Giphy Mode: 
 
 
+<a href="https://imgflip.com/gif/3pes1d"><img src="https://i.imgflip.com/3pes1d.gif" title="made at imgflip.com"/></a>
+
+
 
 **From the repo:**
 1. Clone this project locally
@@ -25,14 +28,14 @@ GIPHY is your top source for the best & newest GIFs & Animated Stickers online. 
 ## Features
 * Fully responsive
 * Fully functional on the front end
-* Hovering on three dots menu will pop up a long list of Giphy categories section. 
-* "Login" button lead to new page with login information
-* Type anything in the search bar, Giphy API will bring the respective giphy's below
+* Hovering on three dots menu will drop a long list of Giphy categories section. 
+* "Login" button leads to a new page with login information
+* Type something in the search bar, Giphy API will bring the respective giphy's below
 * Search icon supports both mouse click and "Enter" button from the keyboard
 * Footer links will provide Project's relevant information. 
 
 
-## Contributers
+## Developers
 * Shashi: [GitHub](https://github.com/sasigit7) | [Portfolio](https://sasiwebdev.netlify.com/)
 * Alex: [GitHub](https://github.com/detoner777) | [Portfolio](https://detoner777.github.io/portfolio-page/)
 
